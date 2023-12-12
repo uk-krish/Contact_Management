@@ -1,5 +1,5 @@
 const ContactSchema={
-    add:'INSERT INTO contact (Fname, Lname, Phone, Email, Profile, dob) VALUES (?, ?, ?, ?, ?, ?)',
+    add:'INSERT INTO contact (fname, lname, phone, email) VALUES (?, ?, ?, ?)',
     show:'SELECT * from contact',
     search:`SELECT * FROM contact WHERE id=?`,
     update:`UPDATE contact set ? WHERE id=?`,

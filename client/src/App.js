@@ -1,9 +1,10 @@
-import React from "react";
+
+import ShowContact from './Components/Showcontacts';
 
 function App() {
   return (
     <div className="App">
-      Hello
+      <ShowContact/>
     </div>
   );
 }

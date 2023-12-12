@@ -5,8 +5,7 @@ const schema=ContactSchema;
 //Create
 exports.InsertContact=async(req,res)=>{
     try {
-        const { Fname, Lname, Phone, Email, Profile, dob } = req.body;
-        const dobValue = dob > 0 ? dob : null;
+        const { Fname, Lname, Phone, Email} = req.body;
         const values = [Fname, Lname, Phone, Email, Profile, dobValue];
         (await con).query(schema.add,values,(err,result)=>{
             res.send(err?err:result)
